@@ -1,0 +1,27 @@
+<html>
+<head>
+<title> print the center piramid pattern</title>
+<script>
+	document.write(`pattern printing`);
+	n=4
+	for(var i=1;i<=n;i++)
+	{
+		let s='';
+		let c=1;
+		for(var j=1;j<=2*n;j++)
+		{
+			if(i+j>=n && (i>=j-n+1))
+			{
+				s+='*'+' ';
+				c++
+			}
+			else
+				s+=' '
+			
+		}
+		document.write(s);
+	}
+	
+</script>
+</head>
+</html>

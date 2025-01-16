@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> Q show the text when the mouse pointer moves over an image</title>
+    </head>
+    <body>
+        <script>
+            function showtext(text)
+            {
+                document.getElementById("ID1").innerHTML=text;
+            }
+            function hide(){
+                document.getElementById("ID1").innerHTML=" ";
+            }
+        </script>
+        <img src="img\img1.jpeg" alt="resturant" width=200 height=200 onmouseover="showtext('hello world')" onmouseout="hide()">
+        <p id="ID1"> </p>    
+    </body>
+</html>

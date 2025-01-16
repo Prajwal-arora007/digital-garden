@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.p-1{
+    color: blue;
+    font-size: 15px;
+    font-weight: bolder;
+}

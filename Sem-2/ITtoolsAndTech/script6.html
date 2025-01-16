@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>to check if a string is only made up of alphabets or not</title>
+        <script>
+            function alpha_string(s)
+            {
+                x=/^[a-z A-Z]+$/;
+                return x.test(s);
+            }
+            SH=prompt("enter the string");
+            x=alpha_string(SH);
+            if(x==true)
+            document.write("the string is only alaphbets");
+            else
+            document.write("the string is not only alphabets");
+        </script>
+    </head>
+</html>

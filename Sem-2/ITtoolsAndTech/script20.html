@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+                WAP to print the series 1+1/2+1/4+1/6...+1/n
+        </title>
+        <body>
+            <form>
+                <p>Enter the number to print sries!<input type="text" maxlength="20" id="n1"/></p><br>
+                <input type="button" onclick="series()" value="number">
+                <p>the result is:
+                    <br>
+                    <span id="res"></span>
+                </p>
+            </form>
+            <script>
+                function series(){
+                    let n=document.getElementById("n1").value;
+                    
+                        if(n==1)
+                        {
+                            document.getElementById("res").innerHTML=1;
+                        }
+                        else
+                        {
+                            let r=1;
+                            for(let i=1;i<=n;i+=2)
+                            {
+                                r=r+1/i;
+                            }
+                            document.getElementById("res").innerHTML=r;
+                        }
+                }
+            </script>
+        </body>
+    </head>
+</html>

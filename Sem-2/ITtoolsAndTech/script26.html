@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            to print the full name of person.
+        </title>
+        <form>
+            <p>Enter your First Name:     <input type="text" maxlength="20" id="n1"/><br>
+            Enter your Second Name:   <input type="text" maxlength="20" id="n2"/><br>   
+            </p><br>
+            <input type="button" onclick="print()" value="Data">
+            <p>
+                Your full name: <span id="res"></span>
+            </p>
+        </form>
+        <script>
+            function print()
+            {
+                let a=document.getElementById("n1").value;
+                let b=document.getElementById("n2").value;
+                d=a+" "+b;
+                document.getElementById("res").innerHTML=d;
+            }
+        </script>
+    </head>
+</html>

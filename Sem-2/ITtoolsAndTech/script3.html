@@ -1,0 +1,22 @@
+<html>
+<head>
+<title> print if a number is prime or not</title>
+<script>
+	x=prompt("enter a number");
+	x=parseInt(x);
+	i=x
+	c=0
+	while(i>0)
+	{
+		if(x%i==0)
+			c++
+		i--;
+	}
+	if(c==2)
+		document.write(`the number ${x} is a prime no`);
+	else
+		document.write(`the number ${x} is not a prime no`);
+	
+</script>
+</head>
+</html>

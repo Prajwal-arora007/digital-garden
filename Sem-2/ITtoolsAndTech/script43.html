@@ -1,0 +1,73 @@
+<html>
+    <style>
+            body{
+                display: flex;
+                align-items: center;
+                align-content: center;
+                color:blue
+                height: 100vh;
+            }
+           .p1{
+                text-decoration: none;
+                color:blue;
+                font-size: 14px;
+                font-weight: bolder;
+            }
+    </style>
+    <head>
+        <title>
+            to compare two string.
+        </title>
+    </head>
+    <body class="p1">
+        <form>
+            <p>enter no1:     <input type="text" maxlength="20" id="n1"/><br>
+            enter no2 :   <input type="text" maxlength="20" id="n2"/><br>
+            enter no3:     <input type="text" maxlength="20" id="n3"/><br>   
+            </p><br>
+            <input type="button" onclick="print()" value="compare">
+            <p>
+                <br>
+                <span id="res"></span>
+            </p>
+        </form>
+        <script>
+            function print()
+            {
+                let a=parseInt(document.getElementById("n1").value);
+                let b=parseInt(document.getElementById("n2").value);
+                let c=parseInt(document.getElementById("n3").value);
+                alert("values"+a+","+b+","+c)
+                if(a>b&&a>c)
+                {
+                    if(b>c)
+                        document.getElementById("res").innerHTML="a>b>c";
+                    else if(c>b)
+                        document.getElementById("res").innerHTML="a>c>b";
+                    else
+                        document.getElementById("res").innerHTML="a>b=c";
+                }
+                else if(b>a&&b>c)
+                {
+                    if(a>c)
+                        document.getElementById("res").innerHTML="b>a>c";
+                    else if(c>a)
+                        document.getElementById("res").innerHTML="b>c>a";
+                    else
+                        document.getElementById("res").innerHTML="b>a=c";
+                }
+                else if(c>a&&c>b)
+                {
+                    if(b>a)
+                        document.getElementById("res").innerHTML="c>b>a";
+                    else if(a>b)
+                        document.getElementById("res").innerHTML="c>a>b";
+                    else
+                        document.getElementById("res").innerHTML="c>a=b";
+                }
+                else
+                    document.getElementById("res").innerHTML="a=b=c"
+            }
+        </script>
+    </body>
+</html>

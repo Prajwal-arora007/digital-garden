@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            to check if an year is leap year or not.
+        </title>
+        <form>
+            <p>Enter the year to check!<input type="text" maxlength="20" id="n1"/></p><br>
+            <input type="button" onclick="check()" value="year">
+            <p>the result is:
+                <br>
+                <span id="res"></span>
+            </p>
+        </form>
+        <script>
+            function check()
+            {
+                let n=document.getElementById("n1").value;
+                if((n % 400 == 0) || (n % 100 != 0) && (n % 4 == 0))
+                {
+                    document.getElementById("res").innerHTML="the year is a leap year";
+                }
+                else
+                {
+                    document.getElementById("res").innerHTML="the year is not a leap year";
+                }
+            }
+        </script>
+    </head>
+</html>

@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>
+            perform the following tasks on the number.
+        </title>
+        <form>
+            <p>Enter the number:     <input type="text" maxlength="20" id="n1"/><br>   
+            </p><br>
+            <input type="button" onclick="prime()" value="check if prime">
+            <input type="button" onclick="rev()" value="check if revese of a number">
+            <input type="button" onclick="sod()" value="check if sum of the digits">
+            <input type="reset" value="reset">
+            <p>
+                <br>
+                <span id="res"></span>
+            </p>
+        </form>
+        <script>
+            function prime()
+            {
+                let a=document.getElementById("n1").value;
+                
+                if(a==0)
+                {
+                    document.getElementById("res").innerHTML=0;
+                }
+
+                let c=0;
+                for(let i = 1; i <= a; i++)
+                {
+                    if(a%i==0)
+                    {
+                        c++;
+                    }
+                }
+                if(c==2){
+                    document.getElementById("res").innerHTML="the number is a prime no";
+                }
+                else{
+                    document.getElementById("res").innerHTML="the no is not a prime no";
+                }
+            }
+
+            function rev()
+            {
+                let a = document.getElementById("n1").value;
+                let n = 0;
+                let x = 0;
+
+                while(true)
+                {
+                    n=a%10;
+                    x=x*10+n;
+                    a=a/10;
+                    if(a==0)
+                        break;
+                }
+                document.getElementById("res").innerHTML="the rev is "+x;
+            }
+            
+            function sod()
+            {
+                let a = document.getElementById("n1").value;
+                let n = 0;
+                let x = 0;
+
+                while(a!=0)
+                {
+                    n=a%10;
+                    x=x+n;
+                    a=a/10;
+                }
+                document.getElementById("res").innerHTML="the sum of digit is "+x;
+            }
+        </script>
+    </head>
+</html>

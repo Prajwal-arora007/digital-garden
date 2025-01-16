@@ -1,0 +1,7 @@
+<address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemalocation="add.xsd">
+    <student>
+        <firstname> Prajwal</firstname>
+        <lastname>Arora</lastname>
+        <age>20</age>
+    </student>
+    </address>

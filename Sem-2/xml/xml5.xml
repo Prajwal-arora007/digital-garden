@@ -1,0 +1,8 @@
+<?xml-stylesheet href="c1.css" type="text/css"?>
+<?xml-stylesheet href="c2.css" type="text/css"?>
+<main>
+    <inst>Institute name : BIT NOIDA</inst>
+    <course>Course name: MCA</course>
+    <duration> Duration: 2 Year</duration>
+    <fees>Fees : 6 lackhs</fees>
+</main>

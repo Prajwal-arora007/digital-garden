@@ -1,0 +1,20 @@
+article{
+    font-family: sans-serif;
+    background: white;
+    color: black;
+}
+
+author{
+    color: red;
+}
+
+headline{
+    text-align: right;
+}
+para{
+    line-height: 1.5;
+    margin-left: 15%;
+}
+instrument{
+    color: blue;
+}

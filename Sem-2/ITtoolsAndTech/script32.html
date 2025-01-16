@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>
+            to make a calculator.
+        </title>
+        <form>
+            <p>Enter the First number:     <input type="text" maxlength="20" id="n1"/><br>
+            Enter the Second number:   <input type="text" maxlength="20" id="n2"/><br>   
+            </p><br>
+            <input type="button" onclick="sum()" value="sum">
+            <input type="button" onclick="product()" value="product">
+            <input type="button" onclick="division()" value="division">
+            <input type="button" onclick="subtraction()" value="sub">
+            <p>
+                Your Answer: <span id="res"></span>
+            </p>
+        </form>
+        <script>
+            function sum()
+            {
+                let a=document.getElementById("n1").value;
+                let b=document.getElementById("n2").value;
+                document.getElementById("res").innerHTML=(a+b);
+            }
+            function product()
+            {
+                let a=document.getElementById("n1").value;
+                let b=document.getElementById("n2").value;
+                document.getElementById("res").innerHTML=(a*b);
+            }
+            function division()
+            {
+                let a=document.getElementById("n1").value;
+                let b=document.getElementById("n2").value;
+                document.getElementById("res").innerHTML=(a/b);
+            }
+            function subtraction()
+            {
+                let a=document.getElementById("n1").value;
+                let b=document.getElementById("n2").value;
+                document.getElementById("res").innerHTML=(a-b);
+            }
+        </script>
+    </head>
+</html>

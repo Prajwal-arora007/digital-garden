@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book>
+    <category>Fiction</category>
+    <title>Harry Potter and the chamber of secrets</title>
+    <author>J.K Rollings</author>
+    <year>2002</year>
+    <price>20$</price>
+    <category>Self-Help</category>
+    <title>Rich dad, Poor dad</title>
+    <author>Robert Kiyosaki</author>
+    <year>1997</year>
+    <price>18$</price>
+    <category>Horror</category>
+    <title>The shining</title>
+    <author>Steaven king</author>
+    <year>1977</year>
+    <price>10$</price>
+    <category>Sci-Fi</category>
+    <title>Lost in space</title>
+    <author> Brad Van Arragon</author>
+    <year>2018</year>
+    <price>25$</price>
+</book>

@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            check the age.
+        </title>
+        <form>
+            <p>enter your firstname:     <input type="text" maxlength="20" id="n1"/><br>
+            enter your secondname  :   <input type="text" maxlength="20" id="n2"/><br> 
+            enter your age  :   <input type="text" maxlength="20" id="n3"/><br>   
+            </p><br>
+            <input type="button" onclick="print()" value="compare">
+            <p>
+                <br>
+                <span id="res"></span>
+            </p>
+        </form>
+        <script>
+            function print()
+            {
+                let a=document.getElementById("n1").value;
+                let b=document.getElementById("n2").value;
+                let c=document.getElementById("n3").value;
+                d="Your full name is"+a+" "+b+"<br> Your age is"+c;
+                if(c>18 &&c<30)
+                {
+                    document.getElementById("res").innerHTML=d;
+                }
+                else{
+                    alert("The age is out of range");
+                }
+            }
+        </script>
+    </head>
+</html>

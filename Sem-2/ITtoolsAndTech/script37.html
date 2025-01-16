@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>
+            to get student details.
+        </title>
+    </head>
+    <body>
+        <h1>BIT NOIDA</h1>
+        <form>
+            <p>Enter your Name:     <input type="text" maxlength="20" id="n1"/><br>
+            Enter your Roll no:   <input type="text" maxlength="20" id="n2"/><br>
+            Enter your Sem: <input type="text" maxlength="30" id="n3"/><br>  
+            Enter your Sub1 marks:     <input type="number" maxlength="20" id="s1"/><br>
+            Enter your Sub2 marks:   <input type="number" maxlength="20" id="s2"/><br>
+            Enter your Sub3 marks : <input type="number" maxlength="30" id="s3"/><br>  
+            </p><br>
+            <input type="button" onclick="print()" value="Data">
+            <p>YOUR INFORMATION GIVEN BY YOU:
+                <br>
+                <span id="res"></span>
+            </p>
+        </form>
+        <script>
+            function print()
+            {
+                let a=document.getElementById("n1").value;
+                let b=document.getElementById("n2").value;
+                let c=document.getElementById("n3").value;
+                let x = parseFloat(document.getElementById("s1").value);
+                let y = parseFloat(document.getElementById("s2").value);
+                let z = parseFloat(document.getElementById("s3").value);
+                total=x+y+z;
+                per=total/3
+                if(per>=90)
+                {
+                    g="A+";
+                }
+                else if(per>=80)
+                {
+                    g="A";
+                }
+                else if(per>=70)
+                {
+                    g="B";
+                }
+                else if(per>=60)
+                {
+                    g="C";
+                }
+                else if(per>=50)
+                {
+                    g="D";
+                }
+                else
+                {
+                    g="Fail";
+                }
+                d="Name: "+a+"<BR>Roll No.: "+b+"<BR>Sub1: "+x+"<BR>Sub2:"+y+"<BR>Sub3:"+z+"<BR> Total:"+total+" Percentage:"+per+" Grade:"+g;
+                document.getElementById("res").innerHTML=d;
+            }
+        </script>
+    </body>
+</html>

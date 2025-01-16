@@ -1,0 +1,30 @@
+<html>
+    <head><title>Password validation</title></head>
+    <body>
+        <form onsubmit="return validpass()">
+            Enter Password: <input type="password" id="pswd" value="">
+            <span id="msg"></span><br>
+            <input type="submit" value="submit">
+            <button type="reset">reset</button>
+        </form>
+        <script>
+            function validpass(){
+                var p=document.getElementById("pswd").value;
+                if(p=="")
+                {
+                    document.getElementById("msg").innerHTML="the password cannot be blank";
+                    return false;
+                }
+                else if(p.length<8||p.length>15)
+                {
+                    document.getElementById("msg").innerHTML="the length of the password must be between 8-15";
+                    return false;
+                }
+                else{
+                    alert("successful");
+                }
+
+            }
+        </script>
+    </body>
+</html>

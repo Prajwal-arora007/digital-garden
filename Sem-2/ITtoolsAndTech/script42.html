@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            to compare two string.
+        </title>
+    </head>
+    <body>
+        <form>
+            <p>String 1:     <input type="text" maxlength="20" id="n1"/><br>
+            </p><br>
+            <input type="button" onclick="print()" value="submit">
+            <input type="reset" value="reset">
+            <p>
+                <br>
+                <span id="res"></span>
+            </p>
+        </form>
+        <script>
+            function print()
+            {
+                let a=document.getElementById("n1").value;
+                r=""
+                for(i=a.length-1;i>=0;i--)
+                {
+                    r=r.concat(a[i]);
+                }
+                if(a==r){
+                    alert("the string is an palindrome");
+                }
+                else{
+                    alert("not a palindrome");
+                }
+            }
+        </script>
+    </body>
+</html>

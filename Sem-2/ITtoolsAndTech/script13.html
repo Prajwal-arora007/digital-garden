@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>fibonacci serires</title>
+        <script>
+            x=prompt("enter a number to print the fibonacci");
+            let a=0,b=1,c=0;
+            if(x<1)
+            {
+                document.write(a);
+            }
+            else if(x<2)
+            {
+                document.write("<br>"+a);
+                document.write("<br>"+b);
+            }
+            else
+            {
+                document.write("<br>"+a);
+                document.write("<br>"+b);
+                for(let i=1;i<=x;i++)
+                {
+                    c=a+b;
+                    document.write("<br>"+c);
+                    a=b;
+                    b=c;
+                }
+            }
+        </script>
+    </head>
+</html>

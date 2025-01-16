@@ -1,0 +1,17 @@
+article{
+    font-family: sans-serif;
+    background: yellow;
+}
+author{
+    font-size: large;
+}
+headline{
+    font-size: x-large;
+    text-align: left;
+}
+para{
+    text-align: center;
+}
+instrment{
+    font-style: italic;
+}

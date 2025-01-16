@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Print the center pyramid pattern</title>
+<script>
+    document.write(`pattern printing<br>`);
+    n = 5;
+    for (var i = 1; i <= n; i++) {
+        let s = '';
+        for (var j = 1; j <= 2 * n; j++) {
+            if (j >= n - i + 1 && j <= n + i - 1) {
+                s += '*' + ' ';
+            } else {
+                s += ' ';
+            }
+        }
+        document.write(s + "<br>");
+    }
+</script>
+</head>
+</html>

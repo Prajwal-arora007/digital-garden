@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Image hover demo</title>
+    <style>
+      #img2{
+        position: fixed;
+        right:0;
+        bottom:0;
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <img id="img1" src="img/img1.jpeg" />
+    <img id="img2" src="img/img2.jpeg" />
+    <p id="res"></p>
+
+    <script>
+      var img1 = document.getElementById("img1"),
+          img2 = document.getElementById("img2");
+          a="HELLO WORLD"
+      img1.onmouseover = function(){
+        img2.style.display = "block";
+        document.getElementById("res").innerHTML="HELLO WORLD"
+      }
+
+      img1.onmouseout = function(){
+        img2.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

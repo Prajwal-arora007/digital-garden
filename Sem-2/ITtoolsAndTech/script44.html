@@ -1,0 +1,53 @@
+<html>
+    <style>
+            body{
+                display: flex;
+                background-color: yellow;
+                height: 100vh;
+            }
+           .p1{
+                text-decoration: none;
+                color:blue;
+                font-size: 14px;
+                font-weight: bolder;
+            }
+    </style>
+    <head>
+        <title>
+           To Validate name
+        </title>
+    </head>
+    <body class="p1">
+        <form>
+            <p>Enter Name:     <input type="text" maxlength="20" id="n1"/><br>
+            
+            
+            </p>
+            <br>
+            <input type="button" onclick="validate()" value="Submit">
+            <input type="reset" value="reset">
+            <p>
+                <br>
+                <span id="res"></span>
+            </p>
+        </form>
+        <script>
+            function validate()
+            {
+                let a=document.getElementById("n1").value;
+                let regex = /^[a-zA-Z ]+$/;
+                let x=regex.test(a);
+                
+                if (x==true)
+                {
+                    alert(a+" is a validate name");
+                }
+                else
+                {
+                   
+                  alert(a+" is not a valid name");
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+
+inst{
+    font-size: x-large;
+    font-weight: bold;
+}
+course{
+    color: blue;
+    font-style: italic;
+}
+duration{
+    color: red;
+}
+fees{
+    background-color: yellow;
+}

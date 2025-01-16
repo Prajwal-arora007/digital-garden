@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title> to find the greade of a student</title>
+        <script>
+            a = prompt("Enter your name!");
+            b = prompt("Enter your roll no.");
+            c = prompt("Enter your total marks");
+            const student = { name: a, roll_no: b, t_marks: c };
+            document.write("Name: " + student.name);
+            document.write("<br>total marks: " + student.t_marks);
+            let t=parseInt(student.t_marks)/5;
+            if(t>=90)
+            {
+                document.write("<br>the grade is A+");
+            }
+            else if(t>=80)
+            {
+                document.write("<br>the grade is A");
+            }
+            else if(t>=75)
+            {
+                document.write("<br>the grade is B+");
+            }
+            else if(t>=65)
+            {
+                document.write("<br>the grade is B");
+            }
+            else if(t>=60)
+            {
+                document.write("<br>the grade is C+");
+            }
+            else if(t>=50)
+            {
+                document.write("<br>the grade is C");
+            }
+            else if(t>=45)
+            {
+                document.write("<br>the grade is D+");
+            }
+            else if(t>=40)
+            {
+                document.write("<br>the grade is D");
+            }
+            else{
+                document.write("<br>FAIL");
+            }
+        </script>
+    </head>
+</html>

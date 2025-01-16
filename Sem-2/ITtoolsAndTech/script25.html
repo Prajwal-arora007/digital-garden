@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            to get student details.
+        </title>
+        <form>
+            <p>Enter your Name:     <input type="text" maxlength="20" id="n1"/><br>
+            Enter your Roll no:   <input type="text" maxlength="20" id="n2"/><br>
+            Enter your Email ID: <input type="text" maxlength="30" id="n3"/><br>   
+            </p><br>
+            <input type="button" onclick="print()" value="Data">
+            <p>YOUR INFORMATION GIVEN BY YOU:
+                <br>
+                <span id="res"></span>
+            </p>
+        </form>
+        <script>
+            function print()
+            {
+                let a=document.getElementById("n1").value;
+                let b=document.getElementById("n2").value;
+                let c=document.getElementById("n3").value;
+                d="Name: "+a+" Roll No.: "+" Email ID: "+c;
+                document.getElementById("res").innerHTML=d;
+            }
+        </script>
+    </head>
+</html>

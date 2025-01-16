@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Creating an object without a class</title>
+    <script>
+        a = prompt("Enter your name!");
+        b = prompt("Enter your employee code");
+        c = prompt("Enter your salary");
+        const person = { name: a, emp_code: b, salary: c };
+        document.write("Name: " + person.name);
+        document.write("<br>Salary: " + person.salary);
+        let netpay = (parseInt(person.salary) + parseInt(person.salary)  * 0.18 + parseInt(person.salary)  * 0.10) - (parseInt(person.salary)  * 0.12 + parseInt(person.salary)  * 0.18);
+        document.write("<br>The net pay of the person is: " + netpay);
+    </script>
+</head>
+</html>
